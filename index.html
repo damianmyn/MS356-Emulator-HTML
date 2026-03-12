@@ -194,7 +194,7 @@ td{padding:9px 16px;font-size:13px;vertical-align:middle}
     <div class="nav-list" id="nav-list"></div>
     <div class="sidebar-foot">
       <p style="font-weight:600;color:var(--g7)">Nimada Ltd.</p>
-      <p>damianmyn.onmicrosoft.com</p>
+      <p>nimada.onmicrosoft.com</p>
     </div>
   </nav>
 
@@ -203,7 +203,7 @@ td{padding:9px 16px;font-size:13px;vertical-align:middle}
     <!-- DASHBOARD -->
     <div id="sec-dashboard" class="section active">
       <div class="sec-hdr">
-        <div><div class="sec-title">Home</div><div class="sec-sub">Nimada Ltd. · damianmyn.onmicrosoft.com</div></div>
+        <div><div class="sec-title">Home</div><div class="sec-sub">Nimada Ltd. · nimada.onmicrosoft.com</div></div>
       </div>
       <div class="stats-grid">
         <div class="stat-card">
@@ -393,7 +393,7 @@ td{padding:9px 16px;font-size:13px;vertical-align:middle}
         <div class="form-grp"><label class="form-lbl">First name *</label><input class="form-ctrl" id="au-fname" placeholder="Jane"></div>
         <div class="form-grp"><label class="form-lbl">Last name *</label><input class="form-ctrl" id="au-lname" placeholder="Smith"></div>
       </div>
-      <div class="form-grp"><label class="form-lbl">Username (email) *</label><input class="form-ctrl" id="au-email" placeholder="jane.smith@damianmyn.com"></div>
+      <div class="form-grp"><label class="form-lbl">Username (email) *</label><input class="form-ctrl" id="au-email" placeholder="jane.smith@nimada.com"></div>
       <div class="form-2">
         <div class="form-grp"><label class="form-lbl">Department</label><input class="form-ctrl" id="au-dept" placeholder="e.g. IT"></div>
         <div class="form-grp"><label class="form-lbl">Role</label>
@@ -414,7 +414,7 @@ td{padding:9px 16px;font-size:13px;vertical-align:middle}
     <div class="modal-hdr"><span class="modal-title">Add a group</span><button class="modal-close" data-close="modal-add-group">&#10005;</button></div>
     <div class="modal-body">
       <div class="form-grp"><label class="form-lbl">Group name *</label><input class="form-ctrl" id="ag-name" placeholder="e.g. Sales Team"></div>
-      <div class="form-grp"><label class="form-lbl">Group email address</label><input class="form-ctrl" id="ag-email" placeholder="sales@damianmyn.com"></div>
+      <div class="form-grp"><label class="form-lbl">Group email address</label><input class="form-ctrl" id="ag-email" placeholder="sales@nimada.com"></div>
       <div class="form-2">
         <div class="form-grp"><label class="form-lbl">Group type</label><select class="form-ctrl" id="ag-type"><option>Microsoft 365</option><option>Security</option><option>Distribution</option><option>Mail-enabled security</option></select></div>
         <div class="form-grp"><label class="form-lbl">Privacy</label><select class="form-ctrl" id="ag-privacy"><option>Public</option><option>Private</option></select></div>
@@ -448,17 +448,17 @@ td{padding:9px 16px;font-size:13px;vertical-align:middle}
 <script>
 // ── DATA ──────────────────────────────────────────────────────────────────────
 var users = [
-  {id:1,name:"Dave Mustaine",  email:"dave.mustaine@damianmyn.com",  role:"Global Administrator",   status:"Active",  licenses:["Microsoft 365 E3","Power BI Pro"],      department:"IT",        created:"2023-01-15"},
-  {id:2,name:"Johnny Cash",  email:"john.cash@damianmyn.com",  role:"User",                   status:"Active",  licenses:["Microsoft 365 Business Basic"],         department:"Marketing", created:"2023-03-20"},
-  {id:3,name:"Mark Knopfner",  email:"mark.knopfner@damianmyn.com",  role:"User",                   status:"Blocked", licenses:["Microsoft 365 E3"],                     department:"Sales",     created:"2022-11-08"},
-  {id:4,name:"Amy Lee",     email:"amy.lee@damianmyn.com",     role:"Exchange Administrator", status:"Active",  licenses:["Microsoft 365 E3","Power BI Pro"],      department:"Finance",   created:"2023-06-01"},
-  {id:5,name:"Jim Croce",     email:"jim.croce@damianmyn.com",     role:"User",                   status:"Active",  licenses:["Microsoft 365 Business Standard"],      department:"HR",        created:"2024-01-10"}
+  {id:1,name:"Dave Mustaine",  email:"dave.mustaine@nimada.com",  role:"Global Administrator",   status:"Active",  licenses:["Microsoft 365 E3","Power BI Pro"],      department:"IT",        created:"2023-01-15"},
+  {id:2,name:"Johnny Cash",  email:"john.cash@nimada.com",  role:"User",                   status:"Active",  licenses:["Microsoft 365 Business Basic"],         department:"Marketing", created:"2023-03-20"},
+  {id:3,name:"Mark Knopfner",  email:"mark.knopfner@nimada.com",  role:"User",                   status:"Blocked", licenses:["Microsoft 365 E3"],                     department:"Sales",     created:"2022-11-08"},
+  {id:4,name:"Amy Lee",     email:"amy.lee@nimada.com",     role:"Exchange Administrator", status:"Active",  licenses:["Microsoft 365 E3","Power BI Pro"],      department:"Finance",   created:"2023-06-01"},
+  {id:5,name:"Jim Croce",     email:"jim.croce@nimada.com",     role:"User",                   status:"Active",  licenses:["Microsoft 365 Business Standard"],      department:"HR",        created:"2024-01-10"}
 ];
 var groups = [
-  {id:1,name:"Marketing Team",    email:"marketing@damianmyn.com",   type:"Microsoft 365",members:12,owner:"Johnny Cash", privacy:"Public"},
-  {id:2,name:"IT Admins",         email:"itadmins@damianmyn.com",    type:"Security",     members:4, owner:"Dave Mustaine", privacy:"Private"},
-  {id:3,name:"All Employees",     email:"allemployees@damianmyn.com",type:"Distribution", members:87,owner:"Dave Mustaine", privacy:"Public"},
-  {id:4,name:"Finance Department",email:"finance@damianmyn.com",     type:"Microsoft 365",members:9, owner:"Amy Lee",   privacy:"Private"}
+  {id:1,name:"Marketing Team",    email:"marketing@nimada.com",   type:"Microsoft 365",members:12,owner:"Johnny Cash", privacy:"Public"},
+  {id:2,name:"IT Admins",         email:"itadmins@nimada.com",    type:"Security",     members:4, owner:"Dave Mustaine", privacy:"Private"},
+  {id:3,name:"All Employees",     email:"allemployees@nimada.com",type:"Distribution", members:87,owner:"Dave Mustaine", privacy:"Public"},
+  {id:4,name:"Finance Department",email:"finance@nimada.com",     type:"Microsoft 365",members:9, owner:"Amy Lee",   privacy:"Private"}
 ];
 var licenses = [
   {id:1,name:"Microsoft 365 E3",               total:25,used:18,cost:"$36.00/user/mo"},
@@ -843,5 +843,6 @@ document.getElementById("btn-audit").addEventListener("click", function(){ toast
 // ── BOOT ──────────────────────────────────────────────────────────────────────
 rDash();
 </script>
+<footer style="position:fixed;bottom:0;left:0;right:0;padding:12px;text-align:center;font-size:12px;color:#605e5c">Made by Damian Mynhardt</footer>
 </body>
 </html>
